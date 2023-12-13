@@ -1,0 +1,191 @@
+@import "../static/default.less";
+
+.banner1 {
+  height: 100%;
+  max-width: 1500px;
+  margin: auto;
+  position: relative;
+
+  svg {
+    display: block;
+    margin-left: -30px;
+    padding-top: 20px;
+  }
+
+  &-wrapper {
+
+    // background: #f8fafe;
+    @media (min-width: @screen-sm-min) {
+      margin-left: 121px;
+      margin-right: 171px;
+      padding-top: 64px;
+    }
+
+    // min-height: 680px;
+    // height: 620px;
+    // overflow: hidden;
+  }
+
+  >div {
+    display: inline-block;
+  }
+
+  &-img-wrapper {
+    background-image: url(/public/travel-agent.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    //    width: 100%;
+    position: absolute;
+    width: 461px;
+    height: 594px;
+  }
+
+  &-text-wrapper {
+    margin-top: 5rem;
+
+    h1 {
+      font-size: 46px;
+    }
+
+    a {
+      display: inline-block;
+
+      .ant-btn {
+        height: 40px;
+        font-size: 16px;
+        border-radius: 20px;
+        padding: 10px 24px;
+
+        &:hover {
+          box-shadow: 0 4px 12px rgba(24, 144, 255, 0.4);
+          transform: translateY(-4px);
+        }
+      }
+    }
+  }
+
+
+
+  .main-info {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    /* or 175% */
+
+    letter-spacing: -0.02em;
+
+    color: #757095;
+    margin-top: 33px;
+
+  }
+
+  .heading-info {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 80px;
+    /* or 133% */
+
+    letter-spacing: -0.03em;
+  }
+
+  .email-box {
+
+    font-family: 'Gilroy-Regular';
+    font-size: 20px;
+    line-height: 23px;
+    
+    width: 591px;
+    height: 65px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4.35199px 134.912px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    border: 2px solid #1B1C31;
+    display: flex;
+    margin-top: 58px;
+  }
+
+  .search-placeholder {
+    font-family: 'Gilroy-Regular';
+    font-size: 20px;
+    line-height: 23px;
+    /* identical to box height */
+
+
+    color: #000000;
+
+    opacity: 0.6;
+  }
+
+  .email-button {
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 40px;
+    gap: 10px;
+
+    width: 190px;
+    background: #1B1C31;
+
+    font-family: 'Gilroy-Bold';
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #FFFFFF;
+  }
+
+  .trulyamni-img {
+    background-image: url(/public/trulyamni.png);
+    background-repeat: no-repeat;
+    width: 151px;
+    height: 80px;
+    position: absolute;
+    left: -30px;
+    top: 312px;
+  }
+
+  .stats-box {
+    width: 210px;
+    background: #FFFFFF;
+    border: 2px solid #F5EBD6;
+    border-radius: 7px;
+    position: absolute;
+    top: 458px;
+    left: 271px;
+
+    font-family: 'Manrope';
+    font-style: normal;
+
+    & .conversion {
+      font-weight: 400;
+      font-size: 11.3746px;
+      line-height: 16px;
+      /* identical to box height */
+    }
+
+    & .ads-count {
+      font-weight: 800;
+      font-size: 20.8535px;
+      line-height: 28px;
+
+      color: #000000;
+    }
+
+    & .roi-pcnt {
+      font-weight: 700;
+      font-size: 13.2704px;
+      line-height: 18px;
+      text-align: right;
+
+      /* Pallet 4 / Tone */
+
+      color: #FDBC64;
+    }
+  }
+}

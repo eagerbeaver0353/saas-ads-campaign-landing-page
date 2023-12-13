@@ -1,0 +1,19 @@
+@import "../static/default.less";
+@zindex-table-fixed: 2;
+//@import "~antd/lib//menu/style/index.less";
+
+.ant-menu {
+    & {
+        background-color: transparent;
+    }
+
+    &-submenu {
+        >.ant-menu {
+            background-color: #fff;
+        }
+    }
+}
+
+.ant-menu-horizontal > .ant-menu-item > a, .ant-menu-horizontal > .ant-menu-submenu > a {
+    color: black;
+}

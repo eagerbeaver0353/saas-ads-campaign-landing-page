@@ -1,0 +1,113 @@
+@import "../static/default.less";
+
+.banner2 {
+  height: 100%;
+  max-width: 1500px;
+  margin: auto;
+  position: relative;
+
+  svg {
+    display: block;
+    margin-left: -30px;
+    padding-top: 20px;
+  }
+
+  &-wrapper {
+
+    // background: #f8fafe;
+    @media (min-width: @screen-sm-min) {
+      margin-left: 121px;
+      margin-right: 171px;
+      padding-top: 64px;
+    }
+
+    // min-height: 680px;
+    // height: 620px;
+    // overflow: hidden;
+  }
+
+  >div {
+    display: inline-block;
+  }
+
+  &-img-wrapper {
+    background-image: url(/public/assets/ad1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    //    width: 100%;
+    position: absolute;
+    width: 553px;
+    height: 588px;
+  }
+
+  &-text-wrapper {
+    margin-top: 5rem;
+
+    h1 {
+      font-size: 46px;
+    }
+
+    a {
+      display: inline-block;
+
+      .ant-btn {
+        height: 40px;
+        font-size: 16px;
+        border-radius: 20px;
+        padding: 10px 24px;
+
+        &:hover {
+          box-shadow: 0 4px 12px rgba(24, 144, 255, 0.4);
+          transform: translateY(-4px);
+        }
+      }
+    }
+  }
+
+
+
+  .main-info {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    /* or 175% */
+
+    letter-spacing: -0.02em;
+
+    color: #757095;
+    margin-top: 33px;
+
+  }
+
+  .heading-info {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 80px;
+    /* or 133% */
+
+    letter-spacing: -0.03em;
+  }
+
+  .get-started {
+    width: 182.5px;
+    height: 46px;
+
+    font-family: 'Gilroy-Bold';
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 188% */
+
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    /* Primary-Blue */
+
+    background: #06226B;
+    border-radius: 47px
+  }
+
+}
